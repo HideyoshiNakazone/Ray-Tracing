@@ -14,7 +14,9 @@ bin-int/
 
 # meson files
 meson.build
-WalnutApp/meson.build
+RayTracing/meson.build
 
 # Exclude
 !vendor/bin
+
+.idea/

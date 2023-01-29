@@ -13,8 +13,8 @@ bin-int/
 .buildconfig
 
 # meson files
-meson.build
-RayTracing/meson.build
+# meson.build
+# RayTracing/meson.build
 
 # Exclude
 !vendor/bin

@@ -8,10 +8,18 @@
 #include "Walnut/Image.h"
 
 #include <glm/glm.hpp>
+#include <string.h>
+#include <stdio.h>
 #include <memory>
 
 
 class Renderer {
+public:
+    struct Settings 
+    {
+        bool Accumulate = true;
+    };
+
 public:
     Renderer() = default;
 
@@ -20,6 +28,8 @@ public:
 
     std::shared_ptr<Walnut::Image> GetFinalImage() const { return m_FinalImage; }
 
+    void ResetFrameIndex() { m_FrameIndex = 1; }
+    Settings& GetSettings() { return m_Settings; }
 private:
     struct HitPayload
     {
@@ -37,9 +47,13 @@ private:
 
 private:
     std::shared_ptr<Walnut::Image> m_FinalImage;
+    Settings m_Settings;
     
     const Scene* m_ActiveScene = nullptr;
     const Camera* m_ActiveCamera = nullptr;
     
     uint32_t* m_ImageData = nullptr;
+    glm::vec4* m_AccumulationData = nullptr;
+
+    uint32_t m_FrameIndex = 1;
 };

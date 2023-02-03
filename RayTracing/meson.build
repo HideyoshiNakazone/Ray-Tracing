@@ -39,7 +39,7 @@ entrylib = static_library(
     'EntryLib',
     sources,
     link_with: [imguilib],
-    link_args: ['-ldl', '-lpthread', '-lX11', '-lXxf86vm', '-lXrandr', '-lXi'],
+    link_args: ['-ldl', '-lpthread', '-lX11', '-lXxf86vm', '-lXrandr', '-lXi', '-ltbb'],
     dependencies: [walnut_deps]
 )
 
@@ -47,7 +47,7 @@ executable('Walnut',
     walnutlib_sources,
     install: true,
     cpp_args: ['-DWL_PLATFORM_WINDOWS'],
-    link_args: ['-ldl', '-lpthread', '-lX11', '-lXxf86vm', '-lXrandr', '-lXi'],
+    link_args: ['-ldl', '-lpthread', '-lX11', '-lXxf86vm', '-lXrandr', '-lXi', '-ltbb'],
     link_with: [entrylib, imguilib],
     dependencies: [walnut_deps]
 )

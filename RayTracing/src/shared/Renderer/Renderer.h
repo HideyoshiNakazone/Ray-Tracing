@@ -8,9 +8,14 @@
 #include "Walnut/Image.h"
 
 #include <glm/glm.hpp>
+#include <algorithm>
+#include <execution>
 #include <string.h>
-#include <stdio.h>
+#include <future>
 #include <memory>
+#include <vector>
+#include <random>
+
 
 
 class Renderer {
@@ -48,6 +53,8 @@ private:
 private:
     std::shared_ptr<Walnut::Image> m_FinalImage;
     Settings m_Settings;
+
+    std::vector<uint32_t> m_ImageHorizontalIterator, m_ImageVerticalIterator;
     
     const Scene* m_ActiveScene = nullptr;
     const Camera* m_ActiveCamera = nullptr;

@@ -41,6 +41,17 @@
         "type_traits": "cpp",
         "tuple": "cpp",
         "typeinfo": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "deque": "cpp",
+        "atomic": "cpp",
+        "condition_variable": "cpp",
+        "memory_resource": "cpp",
+        "mutex": "cpp",
+        "semaphore": "cpp",
+        "shared_mutex": "cpp",
+        "stop_token": "cpp",
+        "thread": "cpp",
+        "execution": "cpp",
+        "algorithm": "cpp"
     }
 }

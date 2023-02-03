@@ -18,7 +18,7 @@ add_project_arguments([
   '-I' + meson.current_source_dir() + '/Walnut/Walnut/src',
   '-I' + meson.current_source_dir() + '/Walnut/Walnut/src/Walnut/Input',
   '-DWL_PLATFORM_WINDOWS',
-  '-O3'
+  '-O3',
 ], language: 'cpp')
 
 subdir('RayTracing')

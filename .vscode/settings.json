@@ -52,6 +52,7 @@
         "stop_token": "cpp",
         "thread": "cpp",
         "execution": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "random": "cpp"
     }
 }

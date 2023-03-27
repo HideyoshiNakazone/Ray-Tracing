@@ -18,5 +18,3 @@ bin-int/
 
 # Exclude
 !vendor/bin
-
-.idea/

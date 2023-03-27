@@ -17,6 +17,7 @@ add_project_arguments([
   '-I' + meson.current_source_dir() + '/Walnut/vendor/stb_image',
   '-I' + meson.current_source_dir() + '/Walnut/Walnut/src',
   '-I' + meson.current_source_dir() + '/Walnut/Walnut/src/Walnut/Input',
+  '-DCMAKE_CXX_COMPILER_LAUNCHER=g++',
   '-DWL_PLATFORM_WINDOWS',
   '-O3',
 ], language: 'cpp')

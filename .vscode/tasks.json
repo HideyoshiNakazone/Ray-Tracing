@@ -1,0 +1,8 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "build",
+        "command": "mkdir -p bin && cd bin && meson --buildtype=debug && ninja",
+        "type": "shell"
+    }]
+}

@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Run RayTracing",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin/RayTracing/Walnut",
+            "cwd": "${workspaceRoot}/bin",
+            "preLaunchTask": "build"
+        }
+    ]
+}
